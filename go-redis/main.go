@@ -15,11 +15,10 @@ var (
 func init() {
 	// Options go-redis连接池
 	redisClient = redis.NewClient(&redis.Options{
-		// TODO 信息
-		Addr: "116.198.246.11:6379",
+		Addr: "127.0.0.1:6379",
 		//Username: "default",
-		Password: "lhh0719.", // 没有密码，默认值
-		DB:       0,          // 默认DB 0
+		Password: "123456", // 没有密码，默认值
+		DB:       0,        // 默认DB 0
 	})
 
 	// 实现redis连接的第二种方式
