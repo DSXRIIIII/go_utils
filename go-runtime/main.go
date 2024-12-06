@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/DSXRIIIII/go-utils/go-runtime/cond"
+	"fmt"
 )
 
 func main() {
@@ -27,6 +27,21 @@ func main() {
 	//waitgroup.WaitGroupCalculate()
 
 	//Cond 案例
-	cond.CondDemo()
+	//cond.CondDemo()
 
+	s := NewSlice()
+	defer s.Add(1).Add(2)
+	s.Add(3)
+
+}
+
+type Slice []int
+
+func NewSlice() Slice {
+	return make(Slice, 0)
+}
+func (s *Slice) Add(elem int) *Slice {
+	*s = append(*s, elem)
+	fmt.Print(elem)
+	return s
 }
