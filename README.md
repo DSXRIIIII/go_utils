@@ -7,3 +7,4 @@
 ### 20241204-更新 runtime -> waitGroup,Cond,Mutex
 ### 20241206-更新 decorator装饰器模式 
 ### 20241206-更新 consul上传grpc服务
+### 20241207-更新 gin框架 jaeger链路追踪
