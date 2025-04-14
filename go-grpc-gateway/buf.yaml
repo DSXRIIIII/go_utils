@@ -1,0 +1,6 @@
+version: v1beta1
+name: buf.build/lihuihuang/repository
+build:
+  roots:
+    - proto
+    - google

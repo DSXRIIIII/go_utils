@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"github.com/DSXRIIIII/go-utils/go-runtime/RWMutex"
 )
 
 func main() {
@@ -29,9 +30,11 @@ func main() {
 	//Cond 案例
 	//cond.CondDemo()
 
-	s := NewSlice()
-	defer s.Add(1).Add(2)
-	s.Add(3)
+	//s := NewSlice()
+	//defer s.Add(1).Add(2)
+	//s.Add(3)
+
+	RWMutex.Work()
 
 }
 

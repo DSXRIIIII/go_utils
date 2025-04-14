@@ -1,0 +1,41 @@
+# 二进制可执行文件（编译后的程序）
+*.exe
+*.out
+*.bin
+*.so
+*.dll
+
+# 测试生成的二进制
+*.test
+
+# Go 编译生成的中间文件
+*.o
+*.a
+
+# 依赖管理目录（如 Go Modules 的 vendor 目录）
+vendor/
+
+# Go 工作区的 bin 和 pkg 目录（`go install` 生成）
+bin/
+pkg/
+
+# IDE 配置文件（如 VS Code、Goland）
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# 环境变量文件（如 .env）
+.env
+.env.local
+
+# 调试和日志文件
+debug
+*.log
+
+# 覆盖率输出文件
+coverage.out
+coverage.html
+
+# Go Modules 的 go.sum 不需要忽略，但 go.work 可能需要（视情况而定）
+# go.work
