@@ -39,3 +39,5 @@ coverage.html
 
 # Go Modules 的 go.sum 不需要忽略，但 go.work 可能需要（视情况而定）
 # go.work
+
+go-sls
