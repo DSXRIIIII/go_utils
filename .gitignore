@@ -41,3 +41,4 @@ coverage.html
 # go.work
 
 go-sls
+go-trafik
